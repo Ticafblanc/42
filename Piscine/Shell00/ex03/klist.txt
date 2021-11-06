@@ -1,0 +1,5 @@
+Credentials cache: API:A55D1647-02DB-4726-820E-4BBA527B5FDD
+        Principal: mdoquocb@42QUEBEC.COM
+
+  Issued                Expires               Principal
+Aug  2 17:10:52 2021  Aug  3 03:10:36 2021  krbtgt/42QUEBEC.COM@42QUEBEC.COM
