@@ -1,6 +1,5 @@
 <div id="top"></div>
-<img src="images/Screen%20Shot%202021-12-08%20at%203.29.06%20AM.png" align="left" alt="Logo" width="180" height="280">
-<br />
+<img src="images/Screen%20Shot%202021-12-08%20at%203.29.06%20AM.png" align="left" alt="Logo" width="150" height="250">
 <div align="center">
   <a href="https://github.com/Ticafblanc/42/1-cursus/born2beroot">
     <code><img height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
