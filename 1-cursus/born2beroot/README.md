@@ -95,28 +95,21 @@ nothing
 
 1 - Set VirtualBox
 
-Linux, Debian 64-bit -> 1gb -> create vdf -> VDI -> Dynamically allocated -> 8gb
+new => name folder => destination folder "sgoinfre/username" => Linux => Debian (64-bit) => 1024mb 
+=> create a virtual hard disc now => VDI (virtual disc image) => Dynamically allocated => 8gb
 
-Settings -> storage -> IDE -> cd -> debian-xx-x-x-amd64-netinst.iso
+Start => deian 9.13 amd64 netinst.iso
 
 --------------------------------------------------------------------------------
-STEP 2 - Installation
+
+2 - Set Debian
+
+Install => french => canada => hostname "username42" => skip domaine name => chose root password => username 
+=> userlogin => user password 
+
 --------------------------------------------------------------------------------
 
-Install (Not Graphical install)
-Choose language (English)
-
-Territory or area: Choose yours. For Me it's Other -> Europe ->
--> Russian Federation -> Canada (lmao) -> American English keyboard layout. Wait
-
-Hostname: yourintralogin42 -> Domain name: leave empty ->
--> Root password: qwerty123(please no!); Re-enter. Full name: Your full name.
-Real/intra/else, doesn't matter. Username: yourintralogin ->
-Password: zxc1337 (bruh) -> Time zone: Your time zone or Moscow for Moscow
-campus (yes). Wait.
-
-................................................................................
-substep 2.1 - partition setup
+3 - Set partition
 
 For basic part:
 Partition method: Guided - use entire disk and set up encrypted LVM ->
