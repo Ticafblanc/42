@@ -111,12 +111,27 @@ Install => french => canada => hostname "username42" => skip domaine name => cho
 
 3 - Set partition
 
-For basic part:
-Partition method: Guided - use entire disk and set up encrypted LVM ->
--> SCSIX (0,0,0) (sda) - 8.6 GB ATA VBOX HARDDISK -> separate /home partition ->
--> yes. Wait.
-Enter encryption passphrase twice -> 8.1G or just max ->
--> Finish partitioning and write changes to disk -> yes. Wait.
+Manuel => SCSIX (0,0,0) (sda) - 8.6 GB ATA VBOX HARDDISK => YES 
+
+=> pri/log 8.2 GB frespace => create new partition => 500M => primary => beginning => Ext4 => /boot => done
+
+=> pri/log 8.2 GB frespace => create new partition => MAX => logical => end => Ext4 => none=> done
+
+--------------------------------------------------------------------------------
+
+4 - Set encryption
+
+configure encrypted volumes => yes => create encrypted volumes => /dev/sda5 => done => finish => yes 
+=> chose encryption passphrase 
+
+--------------------------------------------------------------------------------
+
+5 - Set logical volumes
+
+configure the lopgical volume manager => YES => create volume group => volume group name 
+
+
+
 
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
 | For bonus part:                                                              |
