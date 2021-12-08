@@ -1,27 +1,25 @@
 <div id="top"></div>
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Ticafblanc/42-cursus_get_next_line">
-    <code><img height="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"></code>
+  <a href="https://github.com/Ticafblanc/42/1-cursus/born2beroot">
+    <code><img height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
   </a>
 
-  <h3 align="center">get next line</h3>
+  <h3 align="center">born 2 be root</h3>
 
   <p align="center">
-   Reading a line on a fd is way too tedious!
     <br />
-    <a href="https://github.com/Ticafblanc/42-cursus_get_next_line"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Ticafblanc/42/1-cursus/born2beroot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Ticafblanc/42-cursus_get_next_line">View Demo</a>
+    <a href="https://github.com/Ticafblanc/42/1-cursus/born2beroot">View Demo</a>
     ·
-    <a href="https://github.com/Ticafblanc/42-cursus_get_next_line/issues">Report Bug</a>
+    <a href="https://github.com/Ticafblanc/42/1-cursus/born2beroot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Ticafblanc/42-cursus_get_next_line/issues">Request Feature</a>
+    <a href="https://github.com/Ticafblanc/42/1-cursus/born2beroot/issues">Request Feature</a>
   </p>
 </div>
 
@@ -56,9 +54,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Summary: The aim of this project is to make you code a function that returns a line, read from a file descriptor.
+Summary: This document is a System Administration related exercise. 
 
-Version: 10
+Version: 1
 
 Chapter I Goals
 
