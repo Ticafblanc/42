@@ -1,5 +1,5 @@
 <div id="top"></div>
-<img src="images/Screen%20Shot%202021-11-03%20at%204.47.40%20PM.png" align="right" alt="Logo" width="180" height="280">
+<img src="images/Screen%20Shot%202021-12-08%20at%203.29.06%20AM.png" align="left" alt="Logo" width="180" height="280">
 <br />
 <div align="center">
   <a href="https://github.com/Ticafblanc/42/1-cursus/born2beroot">
