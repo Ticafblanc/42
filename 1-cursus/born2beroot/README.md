@@ -133,12 +133,14 @@ configure the lopgical volume manager => YES => create volume group => volume gr
 create logical volume => select group volume => logical volume name => logical volume size
 
 terminer
+<img src="images/Screen%20Shot%202021-12-08%20at%203.29.06%20AM.png" align="right" alt="Logo" width="150" height="250">
 
 --------------------------------------------------------------------------------
 
 6 - Set logical volumes
 
-select volume => select use as => select mount point => 
+select volume => select use as => select mount point => done setting up the partition
+
 
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
 | For bonus part:                                                              |
