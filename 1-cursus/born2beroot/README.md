@@ -133,7 +133,7 @@ configure the lopgical volume manager => YES => create volume group => volume gr
 create logical volume => select group volume => logical volume name => logical volume size
 
 terminer
-<img src="images/Screen%20Shot%202021-12-08%20at%203.29.06%20AM.png" align="right" alt="Logo" width="150" height="250">
+<img src="images/Screen%20Shot%202021-12-10%20at%202.45.37%20AM.png" align="right" alt="Logo" width="400" height="180">
 
 --------------------------------------------------------------------------------
 
@@ -141,69 +141,38 @@ terminer
 
 select volume => select use as => select mount point => done setting up the partition
 
-
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
-| For bonus part:                                                              |
-| Partition method: Manual -> SCSIX (0,0,0( (sda) -> 8.6 GB ATA HARDDISK ->    |
-|-> yes -> pri/log 8.6 GB FREE SPACE -> Create a new partition (CRANP next) -> |
-|-> 500M -> Primary -> Beginning -> Mount point -> Boot ->                     |
-|-> Done setting up the partition(DSUP) -> pri/log -> CRANP -> 8.1GB or "max"->|
-|-> Logical -> mount point -> Do not mount it -> DSUP ->                       |
-|-> Configure encrypted volumes -> Yes -> Create encrypted volumes ->          |
-|-> /dev/sda5 (press space to choose it) -> DSUTP -> Finish -> yes -> Wait.    |
-|                                                                              |
-| Enter encryption passphrase twice -> Configure the Logical Volume Manager -> |
-|-> yes -> Create volume groupe -> LVMGroup ->                                 |
-|-> press pace on /dev/mapper/sda5_crypt, continue ->                          |
-|-> Create logical volume(CLV next) -> LVMGroup (LVMG next) -> root -> 2G      |
-| CLV -> LVMG -> swap -> 1G                                                    |
-| CLV -> LVMG -> home -> 1G                                                    |
-| CLV -> LVMG -> var -> 1G                                                     |
-| CLV -> LVMG -> srv -> 1G                                                     |
-| CLV -> LVMG -> tmp -> 1G                                                     |
-| CLV -> LVMG -> var-log -> all disk space that left -> Finish                 |
-|                                                                              |
-| Now u see "[!!] Partition disks" window and a lot of LVM VG LVMGroup LV ...  |
-| Go to first #1 998.2 MB (under home, <volumename> #1 for next steps) ->      |
-|-> Use as (UA next): -> EXT4 jfl -> Mount point: (MP next) -> /home ->        |
-|-> Done setting up the partition (yep, DSUP)                                  |
-| root #1 -> UA -> ext4 -> MU -> / - the root fs -> DSUP                       |
-| srv #1 -> UA -> ext4 -> MU -> /srv -> DSUP                                   |
-| swap #1 -> UA -> swap area -> DSUP                                           |
-| tmp #1 -> UA -> ext4 -> MU -> /tmp -> DSUP                                   |
-| var #1 -> UA -> ext4 -> MU -> /var -> DSUP                                   |
-| var-log #1 -> UA -> ext4 -> MU -> Enter manually -> /var/log -> DSUP         |
-| Scroll below -> Finish partitioning and write changes to disk -> yes         |
-\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-
-Now chill, you have plenty of time to stretch your back while debian is
-installing.
-................................................................................
-
-Scan another CD or DVD? -> no
-Debian archive mirror country -> your nearest mirror or Russian Federation for
-Moscow campus -> deb.debian.org (doesn't matter) ->
--> leave proxy info field empty and proceed.
-
-Participate in the package usage survey? -> NO!
-
-Soft seclection: remove SSH server & standart system utilities with space(again)
-GRUB - YES! -> /dev/sda
-Installlation complee -> continue
-
-Virtual war machine is ready.
+finish partition and write changes to disk
 
 --------------------------------------------------------------------------------
-STEP 3 - Configure your machine
+
+7 - scan installation
+
+YES => No => canada => deb.debian.org => continue
+
 --------------------------------------------------------------------------------
 
-Enter your LVM encryption passphrase, log in into your user. GL HF.
-Now we are going to install necessary software and configure it.
+8 - software selection
 
-##################################################################
-# I prefer Nano over Vi because of syntax highlighting.          #
-# But these are the weapons of your choice. Feel free to use Vi. #
-##################################################################
+unselect all => continue
+
+--------------------------------------------------------------------------------
+
+9 - install grub software 
+
+YES => /dev/sda
+
+--------------------------------------------------------------------------------
+
+10 - installation is done
+
+start debian => select debian GNU/Linux => enter passphrase => enter login => enter password
+
+--------------------------------------------------------------------------------
+
+11 - check partition 
+
+lsblk => <img src="images/Screen%20Shot%202021-12-10%20at%202.45.37%20AM.png" align="right" alt="Logo" width="400" height="180">
+
 
 ................................................................................
 substep 3.1 - Installing sudo & adding user in groups
