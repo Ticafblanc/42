@@ -169,10 +169,20 @@ start debian => select debian GNU/Linux => enter passphrase => enter login => en
 
 --------------------------------------------------------------------------------
 
-11 - check partition 
+11 - check partition <img src="images/Screen%20Shot%202021-12-10%20at%205.52.01%20AM.png" align="right" alt="Logo" width="400" height="180">
 
-lsblk => <img src="images/Screen%20Shot%202021-12-10%20at%202.45.37%20AM.png" align="right" alt="Logo" width="400" height="180">
 
+lsblk => 
+
+--------------------------------------------------------------------------------
+
+12 - switch to root 
+
+su - => root password
+
+--------------------------------------------------------------------------------
+
+13 - set sudo  
 
 ................................................................................
 substep 3.1 - Installing sudo & adding user in groups
