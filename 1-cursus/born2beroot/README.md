@@ -122,16 +122,23 @@ Manuel => SCSIX (0,0,0) (sda) - 8.6 GB ATA VBOX HARDDISK => YES
 4 - Set encryption
 
 configure encrypted volumes => yes => create encrypted volumes => /dev/sda5 => done => finish => yes 
-=> chose encryption passphrase 
+=> chose encryption passphrase (Quebec42)
 
 --------------------------------------------------------------------------------
 
-5 - Set logical volumes
+5 - create volume grouop and logical volumes
 
 configure the lopgical volume manager => YES => create volume group => volume group name 
 
+create logical volume => select group volume => logical volume name => logical volume size
 
+terminer
 
+--------------------------------------------------------------------------------
+
+6 - Set logical volumes
+
+select volume => select use as => select mount point => 
 
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|
 | For bonus part:                                                              |
