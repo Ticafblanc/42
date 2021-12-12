@@ -184,10 +184,27 @@ su - => root password
 
 13 - set sudo  
 
-................................................................................
-substep 3.1 - Installing sudo & adding user in groups
+switch to root => apt inatll sudo 
 
-1) su - -> root password -> apt install sudo
+cd /var/log => mkdir sudo
+
+cd /etc/sudoers.d => vi filename 
+
+Defaults        passwd_tries=3
+
+Defaults        badpass_message="<your message>"
+
+Defaults        logfile="/var/log/sudo/filename"
+  
+Defaults        log_input,log_output
+  
+Defaults        iolog_dir="/var/log/sudo"
+  
+Defaults        requiretty
+  
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+
 2) [$ adduser <yourusername> sudo] (yep, you should be in root)
 3) [$ sudo reboot], then log in again
 4) [$ sudo -v] -> password
