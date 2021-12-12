@@ -172,23 +172,23 @@ start debian => select debian GNU/Linux => enter passphrase => enter login => en
 11 - check partition <img src="images/Screen%20Shot%202021-12-10%20at%205.52.01%20AM.png" align="right" alt="Logo" width="400" height="180">
 
 
-lsblk => 
+- lsblk => 
 
 --------------------------------------------------------------------------------
 
 12 - switch to root 
 
-su - => root password
+- su - => root password
 
 --------------------------------------------------------------------------------
 
 13 - set sudo  
 
-switch to root => apt inatll sudo 
+- switch to root => apt inatll sudo 
 
-cd /var/log => mkdir sudo
+- cd /var/log => mkdir sudo
 
-cd /etc/sudoers.d => vi filename 
+- cd /etc/sudoers.d => vi filename 
 
 Defaults        passwd_tries=3
 
@@ -203,16 +203,30 @@ Defaults        iolog_dir="/var/log/sudo"
 Defaults        requiretty
   
 Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+  
+- adduser username sudo => switch to user
+  
+--------------------------------------------------------------------------------
 
+14 - set SSH
+  
+ - sudo apt install openssh-server 
+  
+ - cd /etc/ssh => vi sshd_config
+  
+ #port 22 => port 4242
+ 
+ #PermitRootLogin prohibit-password => PermitRootLogin no
 
-2) [$ adduser <yourusername> sudo] (yep, you should be in root)
-3) [$ sudo reboot], then log in again
-4) [$ sudo -v] -> password
-5) [$ sudo addgroup user42]
-6) [$ sudo adduser yourusername user42]
-7) [$ sudo apt update]
-................................................................................
-................................................................................
+ --------------------------------------------------------------------------------
+
+15 - set UFW
+  
+- sudo apt install ufw
+  
+- sudo ufw allow 4242 => sudo ufw enable
+  
+ 
 substep 3.2 - Installing SSH
 
 1) [$ sudo apt install openssh-server]
