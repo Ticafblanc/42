@@ -290,8 +290,8 @@ line commande fior use it
   
 11 - groups = display groups information 
   
-
-
+12 - crontab = set to run command at fixed time
+  
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
@@ -300,10 +300,14 @@ line commande fior use it
 - [x] install VirtualBox
 - [x] download debian
 - [X] install debian on VirtualBox
-- [ ] 
-- [ ]  
-- [ ]  
-- [ ]  
+- [X] install and set sudo
+- [X] set user and group
+- [X] install and set ssh
+- [X] install and set UFW
+- [X] set a strong password policy
+- [X] create bash script monitoring.sh
+- [X] set to run script evry 10 minutes (crontab)
+- [X]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
