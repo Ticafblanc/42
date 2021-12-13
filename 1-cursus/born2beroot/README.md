@@ -218,6 +218,8 @@ Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
  #port 22 => port 4242
  
  #PermitRootLogin prohibit-password => PermitRootLogin no
+  
+- exit the VM => setting VirtualBox => network => adaptater 1 => port forwarding => add => host port 4242 => guestport 4242 => ok
 
  --------------------------------------------------------------------------------
 
@@ -263,6 +265,32 @@ m h  dom mon dow   command => */10 * * * * sh /path/to/script
 ## Usage
 
 virtual machine to use for creating or testing a program in a specific environment
+  
+line commande fior use it
+  
+1 - su - or username = change for root or user session
+  
+2 - dpkg = manage debian pakage (dpkg -l | grep package = for check if package is already install)
+  
+3 - adduser(or useradd) addgroup(or groupadd) usermod = manage user config (adduser username = for create a new user/ adduser username namegroupe = for add to group)
+  
+4 - getent = displays supported database entries(getent group namegroup = for check user to group or getent passwd username = for check if user already created)
+  
+5 - reboot = with sudo privilege reboot vm engin
+  
+6 - systemctl = manage the init systeme (systemctl status ssh = for check the ssh statu)
+  
+7 - ufw = manage iptable with sudo access ( ufw status = for check firewall statu or ufw enable = for active the firewall)
+  
+8 - hostname = retrieves the domain or host name (hostname -I = ip adress)
+
+9 - ip = check the ip information (ip adress = ip adress)
+  
+10 - chage = display password information (chage -l username = list of password status)
+  
+11 - groups = display groups information 
+  
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
