@@ -85,11 +85,12 @@ see subject for the rest
 <!-- GETTING STARTED -->
 ## Getting Started
 
-compile it all and pass an fd as a parameter
+follow installation instruction 
 
 ### Prerequisites
 
-nothing
+installe virtualbox
+download debian
 
 ### Installation
 
@@ -225,112 +226,37 @@ Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 - sudo apt install ufw
   
 - sudo ufw allow 4242 => sudo ufw enable
+
+--------------------------------------------------------------------------------
+
+16 - set a password age
   
+cd /etc => vi login.defs
+  
+PASS_MAX_DAYS   99999 => 160 PASS_MAX_DAYS   30
+  
+PASS_MIN_DAYS   0 => PASS_MIN_DAYS   2
+  
+PASS_WARN_AGE   7 
+  
+--------------------------------------------------------------------------------
+
+16 - set a password strength
  
-substep 3.2 - Installing SSH
-
-1) [$ sudo apt install openssh-server]
-2) [$ sudo nano /etc/ssh/sshd_config] -> change line "#Port 22" to "Port 4242" and
-"#PermitRootLogin prohibit-password" to "PermitRootLogin no" -> save and exit
-(i hope you know how to do it in Nano...)
-3) [$ sudo nano /etc/ssh/ssh_config] -> change line "#Port 22" to "Port 4242"
-4) [$ sudo service ssh status]. It's should be active.
-................................................................................
-................................................................................
-substep 3.3 - Installing UFW
-
-1) [$ sudo apt install ufw]
-2) [$ sudo ufw enable]
-3) [$ sudo ufw allow 4242]
-4) [$ sudo ufw status]. It's should be active with 4242 and 4242(v6) ports allow
-from anywhere
-................................................................................
-................................................................................
-substep 3.4 - Configuring sudo
-
-1) [$ sudo touch /etc/sudoers.d/sudoconfig]
-2) [$ sudo mkdir /var/log/sudo] (for sudo log files, yes)
-3) [$ sudo nano /etc/sudoers.d/sudoconfig] then write next lines in our new file:
-
-************************************************************
-* Defaults      passwd_tries=3                             *
-* Defaults      badpass_message="Incorrect password"       * <- you can set your
-* Defaults      log_input,log_output                       *    own message here
-* Defaults      iolog_dir="/var/log/sudo"                  *
-* Defaults      requiretty                                 *
-* Defaults      secure_path="that/long/paths/from/subject" *
-************************************************************
-
-................................................................................
-................................................................................
-substep 3.5 - Setting up a strong password policy
-
-1) [$ sudo nano /etc/login.defs]
-2) replace next lines:
-
-*************************************************
-* PASS_MAX_DAYS    99999 -> PASS_MAX_DAYS    30 * <- line 160 you can easly
-* PASS_MIN_DAYS    0     -> PASS_MIN_DAYS    2  *    reach it with ctrl+_ in
-*************************************************    nano
-
-PASS_WARN_AGE is 7 by defaults anyway so just ignore it.
-3) [$ sudo apt install libpam-pwquality]
-4) [$ sudo nano /etc/pam.d/common-password]
-5) Add to the end of the "password requisite pam_pwqiality.so retry=3" line next
-parameters
-
-****************************************************************************************
-* minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root *
-****************************************************************************************
-
-You should get_next_line(ha-ha):
-"password requisite pam_pwqiality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root"
-
-6) Now you have to change all your passwords according to your new password
-policy
-***************
-* [$ passwd]      * <- change user password
-* [$ sudo passwd] * <- change root password
-***************
-................................................................................
+sudo apt install libpam-pwquality
+  
+cd /etc/pam.d => vi common-password
+  
+password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
 
 --------------------------------------------------------------------------------
-STEP 4 - Network adapter configuration
---------------------------------------------------------------------------------
 
-You may not be able to connect to your VM via SSH with standard settings in
-VirtualBox. Theres a way to wix it!
+16 - set crontab
+  
+sudo crontab -u root -e
 
-1) Turn off your VM
-2) Go to your VM settings in VirtualBox
-3) Network -> Adapter 1 -> Advanced -> Port forwarding
-4)Add new rule (little green button on right top side) and next parameters:
-
-**************************************************************************
-* Protocol       Host IP       Host Port       Guest IP       Guest Port *
-* TCP            127.0.0.1     4242            10.0.2.15      4242       *
-**************************************************************************
-6) In your host (physical) machine open Terminal and run
-[ssh <vmusername>@localhost -p 4242]
-
-Now you can control your virtual machine from the host terminal.
-
----------------------------------------------------------------------------------
-CONCLUSION
----------------------------------------------------------------------------------
-
-And after all of this manipulations we finally came for our monitoring.sh script
-All guidelines is already exists in README.md file. Theres one more thing to
-install that already listed in monitroing.sh file:
-
-**********************************
-* [$ sudo apt install net-tools] *
-**********************************
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Dont forget to make a clone or snapshot of your VM before evaluation !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+m h  dom mon dow   command => */10 * * * * sh /path/to/script
+  
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
