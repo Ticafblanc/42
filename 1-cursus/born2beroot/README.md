@@ -290,7 +290,7 @@ line commande fior use it
   
 11 - groups = display groups information 
   
-12 - crontab = set to run command at fixed time
+12 - crontab = set to run command at fixed time (crontab -u root -e = set crontab or crontab -u root -l = display sitting)
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
