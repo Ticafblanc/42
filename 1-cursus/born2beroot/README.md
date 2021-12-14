@@ -233,7 +233,7 @@ Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 
 16 - set a password age
   
-cd /etc => vi login.defs
+- cd /etc => vi login.defs
   
 PASS_MAX_DAYS   99999 => 160 PASS_MAX_DAYS   30
   
@@ -243,21 +243,53 @@ PASS_WARN_AGE   7
   
 --------------------------------------------------------------------------------
 
-16 - set a password strength
+17 - set a password strength
  
-sudo apt install libpam-pwquality
+- sudo apt install libpam-pwquality
   
-cd /etc/pam.d => vi common-password
+- cd /etc/pam.d => vi common-password
   
 password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
 
 --------------------------------------------------------------------------------
 
-16 - set crontab
+18 - set crontab
   
-sudo crontab -u root -e
+- sudo crontab -u root -e
 
 m h  dom mon dow   command => */10 * * * * sh /path/to/script
+  
+--------------------------------------------------------------------------------
+
+19 - intall and set lighttpd
+  
+- sudo apt install lighttpd
+  
+- sudo ufw allow 80
+  
+--------------------------------------------------------------------------------
+
+20 - intall and set mariadb
+  
+- sudo apt install mariadb-server
+  
+- sudo mysql_secure_installation
+
+Enter current password for root (enter for none): #Just press Enter (do not confuse database root with system root)
+
+Set root password? [Y/n] n
+
+Remove anonymous users? [Y/n] Y
+
+Disallow root login remotely? [Y/n] Y
+
+Remove test database and access to it? [Y/n] Y
+
+Reload privilege tables now? [Y/n] Y
+  
+- sudo mariadb => MariaDB [(none)]> => CREATE DATABASE database-name => GRANT ALL ON <database-name>.* TO '<username-2>'@'localhost' IDENTIFIED BY '<password-2>' WITH GRANT OPTION => FLUSH PRIVILEGES => exit
+  
+
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -286,11 +318,16 @@ line commande fior use it
 
 9 - ip = check the ip information (ip adress = ip adress)
   
+10 - ssh = command to connect local server (ssh username@ipadress -p 4242 = to connect)
+  
 10 - chage = display password information (chage -l username = list of password status)
   
 11 - groups = display groups information 
   
 12 - crontab = set to run command at fixed time (crontab -u root -e = set crontab or crontab -u root -l = display sitting)
+  
+13 - mariadb = command data base (mariadb -u username -p = connect database)
+
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -307,7 +344,8 @@ line commande fior use it
 - [X] set a strong password policy
 - [X] create bash script monitoring.sh
 - [X] set to run script evry 10 minutes (crontab)
-- [X]
+- [X] install and set lighttpd
+- [X] install and set mariadb
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
