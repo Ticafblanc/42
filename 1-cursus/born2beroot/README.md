@@ -289,8 +289,53 @@ Reload privilege tables now? [Y/n] Y
   
 - sudo mariadb => MariaDB [(none)]> => CREATE DATABASE database-name => GRANT ALL ON <database-name>.* TO '<username-2>'@'localhost' IDENTIFIED BY '<password-2>' WITH GRANT OPTION => FLUSH PRIVILEGES => exit
   
+--------------------------------------------------------------------------------
 
+21 - intall php
   
+- sudo apt install php-cgi php-mysql
+  
+--------------------------------------------------------------------------------
+
+22 - intall and set wordpress
+  
+- sudo apt install w3m 
+
+- w3m http://wordpress.org => download latest.tar.gz
+
+- sudo tar -xyzf latest.tar.gz => sudo cp -r wordpress/* /var/www/html => sudo rm latest.tar.gz => sudo rm -rf /var/www/html/wordpress
+  
+- cd /var/www/html => sudo cp wp-config-sample.php wp-config.php => sudo wp-config.php
+  
+define( 'DB_NAME', 'database_name_here' );^M
+define( 'DB_USER', 'username_here' );^M
+define( 'DB_PASSWORD', 'password_here' );^M
+  
+- sudo lighty-enable-mod fastcgi
+  
+- sudo lighty-enable-mod fastcgi-php
+  
+- sudo service lighttpd force-reload
+  
+--------------------------------------------------------------------------------
+
+23 - intall and set ftp (sftp)
+  
+- sudo apt install vsftpd
+  
+- sudo ufw allow 21
+  
+- cd /etc => vi vsftpd.conf
+  
+write_enable=YES
+  
+- sudo mkdir /home/<username>/ftp
+  
+- sudo mkdir /home/<username>/ftp/files
+  
+- udo chown nobody:nogroup /home/<username>/ftp
+  
+- sudo chmod a-w /home/<username>/ftp
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
@@ -346,6 +391,7 @@ line commande fior use it
 - [X] set to run script evry 10 minutes (crontab)
 - [X] install and set lighttpd
 - [X] install and set mariadb
+- [X] install php
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
