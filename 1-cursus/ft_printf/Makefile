@@ -6,7 +6,7 @@
 #    By: mdoquocb <mdoquocb@student.42quebec>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/10 07:19:46 by mdoquocb          #+#    #+#              #
-#    Updated: 2021/11/10 07:19:51 by mdoquocb         ###   ########.fr        #
+#    Updated: 2022/01/28 11:08:54 by mdoquocb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ CFLAGS = -Wall -Wextra -Werror
 HEADER = ft_printf.h
 
 SRC = ft_printf.c \
+	  ft_printf_utils.c \
 
 OBJ = $(SRC:.c=.o)
 
