@@ -394,6 +394,8 @@ line commande fior use it
 - [X] install and set lighttpd
 - [X] install and set mariadb
 - [X] install php
+- [X] set web sit on wp-admin.php
+- [X] push and correction ==> 125/100
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
