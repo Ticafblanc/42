@@ -363,7 +363,7 @@ line commande fior use it
 
 9 - ip = check the ip information (ip adress = ip adress)
   
-10 - ssh = command to connect local server (ssh username@ipadress -p 4242 = to connect)
+10 - ssh = command to connect local server (ssh username@ipadress -p 4242 = to connect, sudo service --status-all)
   
 10 - chage = display password information (chage -l username = list of password status)
   
