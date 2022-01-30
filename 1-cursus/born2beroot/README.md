@@ -357,7 +357,7 @@ line commande fior use it
   
 6 - systemctl = manage the init systeme (systemctl status ssh = for check the ssh statu)
   
-7 - ufw = manage iptable with sudo access ( ufw status = for check firewall statu or ufw enable = for active the firewall)
+7 - ufw = manage iptable with sudo access ( ufw status = for check firewall statu or ufw enable = for active the firewall or ufw delete "number" = for delete )
   
 8 - hostname = retrieves the domain or host name (hostname -I = ip adress)
 
@@ -372,6 +372,8 @@ line commande fior use it
 12 - crontab = set to run command at fixed time (crontab -u root -e = set crontab or crontab -u root -l = display sitting)
   
 13 - mariadb = command data base (mariadb -u username -p = connect database)
+
+14 - groups = check group
 
   
 <p align="right">(<a href="#top">back to top</a>)</p>
