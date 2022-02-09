@@ -6,7 +6,7 @@
 /*   By: mdoquocb <mdoquocb@student.42quebec.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 08:51:54 by mdoquocb          #+#    #+#             */
-/*   Updated: 2022/02/05 16:10:10 by mdoquocb         ###   ########.fr       */
+/*   Updated: 2022/02/09 14:35:49 by mdoquocb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,8 @@ int		ft_print_mem(unsigned long n, struct s_flgs flags);
 int		ft_print_nbr(long n, struct s_flgs flags);
 int		ft_print_hex(unsigned int n, struct s_flgs flags, char c);
 int		ft_print_htag(int cas);
-void    ft_printf_flag_app(int ft, int *flag);
-void    ft_printf_flag_app_2(int ft, int *flag, long n);
+void	ft_printf_flag_app(int ft, int *flag);
+void	ft_printf_flag_app_2(int ft, int *flag, long n);
 int		ft_print_other(char c, struct s_flgs flags);
 
 int		ft_is_conversion_specifiers(const char c);

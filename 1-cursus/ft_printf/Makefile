@@ -52,7 +52,7 @@ fclean: clean
 
 re: fclean all
 
-bonus: $(OBJB)
+bonus: fclean $(OBJB)
 	@ar r $(NAME) $(OBJB)
 
 .PHONY :all	clean	fclean	re
