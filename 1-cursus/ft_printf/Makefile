@@ -6,7 +6,7 @@
 #    By: mdoquocb <mdoquocb@student.42quebec>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/10 07:19:46 by mdoquocb          #+#    #+#              #
-#    Updated: 2022/01/28 11:08:54 by mdoquocb         ###   ########.fr        #
+#    Updated: 2022/01/29 10:07:20 by mdoquocb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,28 +16,43 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-HEADER = ft_printf.h
+CL = rm -rf
 
-SRC = ft_printf.c \
-	  ft_printf_utils.c \
+HEADER =	ft_printf.h \
+		ft_printf_bonus.h \
+
+SRC = 	ft_printf.c \
+	ft_printf_utils.c \
+
+SRCB =	ft_printf_bonus.c \
+	ft_printf_flag_bonus.c \
+	ft_printf_dispatch_flag_csp_bonus.c \
+	ft_printf_dispatch_flag_duxo_bonus.c \
+	ft_printf_put_c_bonus.c \
+	ft_printf_put_s_bonus.c \
+	ft_printf_put_p_bonus.c \
+	ft_printf_put_du_bonus.c \
+	ft_printf_put_x_bonus.c \
+	ft_printf_flag_app_bonus.c \
 
 OBJ = $(SRC:.c=.o)
 
-all: $(NAME)
+OBJB = $(SRCB:.c=.o)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $^
-	ranlib $(NAME)
+	@ar r $(NAME) $(OBJ)
 
-%.o: %.c
-	$(CC) -c $< $(CFLAGS)
+all: $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	$(CL) $(OBJ) $(OBJB)
 
 fclean: clean
-	rm -f $(NAME)
+	$(CL) $(NAME)
 
 re: fclean all
 
-.PHONY: all re clean fclean
+bonus: $(OBJB)
+	@ar r $(NAME) $(OBJB)
+
+.PHONY :all	clean	fclean	re
