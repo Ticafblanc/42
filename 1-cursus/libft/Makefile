@@ -1,3 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mdoquocb <mdoquocb@student.42quebec.com>   +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/02/10 10:09:10 by mdoquocb          #+#    #+#              #
+#    Updated: 2022/02/10 10:13:17 by mdoquocb         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = libft.a
+
+CC = gcc
+
+CC_FLAGS = -Wall -Wextra -Werror 
+
+CL = rm -rf
+
 SRC = ft_memset.c		\
 		ft_bzero.c		\
 		ft_memcpy.c		\
@@ -33,9 +53,8 @@ SRC = ft_memset.c		\
 		ft_putchar_fd.c	\
 		ft_putstr_fd.c	\
 		ft_putendl_fd.c	\
-		ft_putnbr_fd.c
-
-SRCB =	ft_lstnew.c			\
+		ft_putnbr_fd.c	\
+		ft_lstnew.c			\
 		ft_lstadd_front.c	\
 		ft_lstsize.c		\
 		ft_lstlast.c		\
@@ -43,20 +62,9 @@ SRCB =	ft_lstnew.c			\
 		ft_lstclear.c		\
 		ft_lstdelone.c		\
 		ft_lstiter.c		\
-		ft_lstmap.c			\
-		$(SRCS)
-
-NAME = libft.a
+		ft_lstmap.c	
 
 OBJ = $(SRC:.c=.o)
-
-OBJB = $(SRCB:.c=.o)
-
-CC = gcc
-
-CC_FLAGS = -Wall -Wextra -Werror 
-
-CL = rm -rf
 
 %.o : %.c
 	$(CC) $(CC_FLAGS) -c $< -o $@
@@ -73,8 +81,5 @@ fclean: clean
 	$(CL) $(NAME)
 
 re: fclean all
-
-bonus: $(OBJB)
-	@ar r $(NAME) $(OBJB)
 
 .PHONY :all	clean	fclean	re
