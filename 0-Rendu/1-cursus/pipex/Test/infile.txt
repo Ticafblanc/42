@@ -1,0 +1,4 @@
+La miniLibX (ou mlx pour les intimes) est la librairie utilisée à Epitech 
+et 42 pour les projets d’infographie: fil de fer, raytracer, … Ses caractéristiques principales sont 
+l’aspect très simple des fonctions disponibles: ouvrir une fenêtre, afficher un pixel à l’écran, enregistrer 
+un appel de touche (clavier ou souris). C’est une librairie basée sur ...
