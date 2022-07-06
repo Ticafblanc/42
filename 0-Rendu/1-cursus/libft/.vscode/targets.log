@@ -1,0 +1,831 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Tue May 17 17:58:31 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 37)
+OBJ = $(addprefix $(OBJ_PATH),$(OBJ_NAME))
+# makefile (from `Makefile', line 29)
+SRC = $(addprefix $(SRC_PATH),$(SRC_NAME))
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/mat/Desktop/libft
+# makefile
+ 
+SHELL = /bin/sh
+# makefile (from `Makefile', line 21)
+BIN = $(addprefix $(BIN_PATH),$(BIN_NAME))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 53)
+BLUE = "\x1b[34m""\x1b[M"
+# environment
+STARSHIP_SESSION_KEY = 2488125278462456
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# makefile (from `Makefile', line 45)
+CL = rm -rf
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/7j/skmw046x6zxbxb43wgly39fm0000gn/T/vscode-ipc-bcb02036-1dae-40f1-ba20-1e7b4c881e9a.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 13)
+PROJECT = libft
+# makefile (from `Makefile', line 25)
+SRC_PATH = Sources/
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 17)
+BIN_PATH = Bin/
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+QT_MAC_DISABLE_FOREGROUND_APPLICATION_TRANSFORM = 1
+# makefile (from `Makefile', line 43)
+CC_FLAGS = -Wall -Wextra -Werror -I./Includes
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.cQOVe1H6kL/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.h74eLJj2Fp/org.xquartz:0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/mat/Desktop/libft
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 49)
+GREEN = "\x1b[32m""\x1b[M"
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/mat
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/mat/Library/Application Support/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LOGNAME = mat
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/mat/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 41)
+CC = gcc
+# makefile (from `Makefile', line 27)
+SRC_NAME = $(notdir $(wildcard Sources/*.c))
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = mat
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 19)
+BIN_NAME = $(PROJECT).a
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/7j/skmw046x6zxbxb43wgly39fm0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/mat/Library/Application Support/Code/1.67.1-main.sock
+# makefile (from `Makefile', line 51)
+RED = "\x1b[31m""\x1b[M"
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.20172274.20172280
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x52
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 33)
+OBJ_PATH = $(BIN_PATH)Objects/
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# makefile (from `Makefile', line 35)
+OBJ_NAME = $(SRC_NAME:.c=.o)
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 34134
+# environment
+STARSHIP_SHELL = zsh
+# variable set hash-table stats:
+# Load=86/1024=8%, Rehash=0, Collisions=12/130=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777224, inode 20753360): 7 files, no impossibilities.
+# Sources (device 16777224, inode 20753448): 81 files, no impossibilities.
+
+# 88 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+Bin/Objects/%.o: Sources/%.c
+#  commands to execute (from `Makefile', line 61):
+	@$(CC) $(CC_FLAGS) -c $< -o $@
+	@echo $(BLUE) $(notdir $@) is created !!
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+Bin/Objects/ft_lstclear.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_put_du.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strlcat.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_putstr.o:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_bzero.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_isprint.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: Bin/libft.a
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  commands to execute (from `Makefile', line 58):
+	@echo $(GREEN) Compilation $(PROJECT) is completed !!
+	
+
+# Not a target:
+Bin/Objects/ft_check_extension.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+title:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := title
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/12=17%
+#  commands to execute (from `Makefile', line 69):
+	@echo $(GREEN)******************$(PROJECT)******************
+	
+
+# Not a target:
+Bin/Objects/ft_hexlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean fclean finish re directory
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_striteri.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_putchar.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_put_c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_put_x.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_exit_strerror.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strdup.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_free_l_lst.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_atol.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lst_new.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_exit_perror.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_putnbr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_flag.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-17 17:58:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Bin/Objects/ft_memlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_itoa.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_calloc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_substr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Bin/libft.a: title directory Bin/Objects/ft_atoi.o Bin/Objects/ft_atol.o Bin/Objects/ft_bzero.o Bin/Objects/ft_calloc.o Bin/Objects/ft_check_extension.o Bin/Objects/ft_check_limit_int.o Bin/Objects/ft_exit_perror.o Bin/Objects/ft_exit_strerror.o Bin/Objects/ft_free_l_lst.o Bin/Objects/ft_free_pp.o Bin/Objects/ft_hexlen.o Bin/Objects/ft_isalnum.o Bin/Objects/ft_isalpha.o Bin/Objects/ft_isascii.o Bin/Objects/ft_isdigit.o Bin/Objects/ft_islower.o Bin/Objects/ft_isprint.o Bin/Objects/ft_isupper.o Bin/Objects/ft_itoa.o Bin/Objects/ft_lst_add.o Bin/Objects/ft_lst_check_double.o Bin/Objects/ft_lst_new.o Bin/Objects/ft_lstadd_back.o Bin/Objects/ft_lstadd_front.o Bin/Objects/ft_lstclear.o Bin/Objects/ft_lstdelone.o Bin/Objects/ft_lstiter.o Bin/Objects/ft_lstlast.o Bin/Objects/ft_lstmap.o Bin/Objects/ft_lstnew.o Bin/Objects/ft_lstsize.o Bin/Objects/ft_memchr.o Bin/Objects/ft_memcmp.o Bin/Objects/ft_memcpy.o Bin/Objects/ft_memlen.o Bin/Objects/ft_memmove.o Bin/Objects/ft_memset.o Bin/Objects/ft_nbrlen.o Bin/Objects/ft_printf.o Bin/Objects/ft_printf_dispatch_flag_csp.o Bin/Objects/ft_printf_dispatch_flag_duxo.o Bin/Objects/ft_printf_flag.o Bin/Objects/ft_printf_flag_app.o Bin/Objects/ft_printf_put_c.o Bin/Objects/ft_printf_put_du.o Bin/Objects/ft_printf_put_p.o Bin/Objects/ft_printf_put_s.o Bin/Objects/ft_printf_put_x.o Bin/Objects/ft_put_lst.o Bin/Objects/ft_putchar.o Bin/Objects/ft_putchar_fd.o Bin/Objects/ft_putendl_fd.o Bin/Objects/ft_puthex.o Bin/Objects/ft_putnbr.o Bin/Objects/ft_putnbr_fd.o Bin/Objects/ft_putstr.o Bin/Objects/ft_putstr_fd.o Bin/Objects/ft_realloc.o Bin/Objects/ft_rev_rotate_lst.o Bin/Objects/ft_rotate_lst.o Bin/Objects/ft_split.o Bin/Objects/ft_str_len.o Bin/Objects/ft_strchr.o Bin/Objects/ft_strdup.o Bin/Objects/ft_striteri.o Bin/Objects/ft_strjoin.o Bin/Objects/ft_strlcat.o Bin/Objects/ft_strlcpy.o Bin/Objects/ft_strlen.o Bin/Objects/ft_strmapi.o Bin/Objects/ft_strncmp.o Bin/Objects/ft_strnstr.o Bin/Objects/ft_strrchr.o Bin/Objects/ft_strtrim.o Bin/Objects/ft_substr.o Bin/Objects/ft_swap_lst.o Bin/Objects/ft_tolower.o Bin/Objects/ft_toupper.o Bin/Objects/get_next_line.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  commands to execute (from `Makefile', line 65):
+	@ar rc $(BIN) $(OBJ)
+	@echo $(BLUE) $(notdir $(BIN)) is created !!
+	
+
+# Not a target:
+Bin/Objects/ft_isalpha.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lstsize.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_isascii.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_check_limit_int.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lst_add.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_puthex.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strlcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lstmap.o:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lst_check_double.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strncmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 80):
+	@$(CL) $(BIN)
+	@echo $(RED) Binary $(notdir $(BIN)) is delete !
+	
+
+# Not a target:
+Bin/Objects/ft_isalnum.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_realloc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lstadd_front.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_put_p.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lstdelone.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_memmove.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_isupper.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_put_lst.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_toupper.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_swap_lst.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strnstr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_putstr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_rotate_lst.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/get_next_line.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_flag_app.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+finish:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 84):
+	@$(CL) $(BIN_PATH)
+	@echo $(RED) All $(PROJECT) is delete !
+	
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 76):
+	@$(CL) $(OBJ)
+	@echo $(RED) Object $(notdir $(OBJ)) is delete !
+	
+
+# Not a target:
+Bin/Objects/ft_nbrlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_putchar_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_atoi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_dispatch_flag_csp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strtrim.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_putnbr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_free_pp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lstadd_back.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_putendl_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strmapi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+Bin/Objects/ft_lstiter.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_islower.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+directory:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 72):
+	@mkdir -p $(OBJ_PATH) > /dev/null 2>&1 || true
+	@echo $(BLUE) Binary $(PROJECT) directory created !!
+	
+
+# Not a target:
+Bin/Objects/ft_rev_rotate_lst.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_memcmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_str_len.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_put_s.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_isdigit.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lstnew.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_lstlast.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_memchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_printf_dispatch_flag_duxo.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_tolower.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strrchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_strjoin.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Bin/Objects/ft_split.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=91/1024=9%, Rehash=0, Collisions=16/196=8%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue May 17 17:58:31 2022
+
+ 

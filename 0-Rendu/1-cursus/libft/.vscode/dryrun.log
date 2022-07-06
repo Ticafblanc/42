@@ -1,0 +1,207 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/mat/Desktop/libft'
+echo "\x1b[32m""\x1b[M"******************libft******************
+mkdir -p Bin/Objects/ > /dev/null 2>&1 || true
+echo "\x1b[34m""\x1b[M" Binary libft directory created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_atoi.c -o Bin/Objects/ft_atoi.o
+echo "\x1b[34m""\x1b[M" ft_atoi.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_atol.c -o Bin/Objects/ft_atol.o
+echo "\x1b[34m""\x1b[M" ft_atol.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_bzero.c -o Bin/Objects/ft_bzero.o
+echo "\x1b[34m""\x1b[M" ft_bzero.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_calloc.c -o Bin/Objects/ft_calloc.o
+echo "\x1b[34m""\x1b[M" ft_calloc.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_check_extension.c -o Bin/Objects/ft_check_extension.o
+echo "\x1b[34m""\x1b[M" ft_check_extension.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_check_limit_int.c -o Bin/Objects/ft_check_limit_int.o
+echo "\x1b[34m""\x1b[M" ft_check_limit_int.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_exit_perror.c -o Bin/Objects/ft_exit_perror.o
+echo "\x1b[34m""\x1b[M" ft_exit_perror.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_exit_strerror.c -o Bin/Objects/ft_exit_strerror.o
+echo "\x1b[34m""\x1b[M" ft_exit_strerror.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_free_l_lst.c -o Bin/Objects/ft_free_l_lst.o
+echo "\x1b[34m""\x1b[M" ft_free_l_lst.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_free_pp.c -o Bin/Objects/ft_free_pp.o
+echo "\x1b[34m""\x1b[M" ft_free_pp.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_hexlen.c -o Bin/Objects/ft_hexlen.o
+echo "\x1b[34m""\x1b[M" ft_hexlen.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_isalnum.c -o Bin/Objects/ft_isalnum.o
+echo "\x1b[34m""\x1b[M" ft_isalnum.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_isalpha.c -o Bin/Objects/ft_isalpha.o
+echo "\x1b[34m""\x1b[M" ft_isalpha.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_isascii.c -o Bin/Objects/ft_isascii.o
+echo "\x1b[34m""\x1b[M" ft_isascii.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_isdigit.c -o Bin/Objects/ft_isdigit.o
+echo "\x1b[34m""\x1b[M" ft_isdigit.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_islower.c -o Bin/Objects/ft_islower.o
+echo "\x1b[34m""\x1b[M" ft_islower.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_isprint.c -o Bin/Objects/ft_isprint.o
+echo "\x1b[34m""\x1b[M" ft_isprint.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_isupper.c -o Bin/Objects/ft_isupper.o
+echo "\x1b[34m""\x1b[M" ft_isupper.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_itoa.c -o Bin/Objects/ft_itoa.o
+echo "\x1b[34m""\x1b[M" ft_itoa.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lst_add.c -o Bin/Objects/ft_lst_add.o
+echo "\x1b[34m""\x1b[M" ft_lst_add.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lst_check_double.c -o Bin/Objects/ft_lst_check_double.o
+echo "\x1b[34m""\x1b[M" ft_lst_check_double.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lst_new.c -o Bin/Objects/ft_lst_new.o
+echo "\x1b[34m""\x1b[M" ft_lst_new.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstadd_back.c -o Bin/Objects/ft_lstadd_back.o
+echo "\x1b[34m""\x1b[M" ft_lstadd_back.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstadd_front.c -o Bin/Objects/ft_lstadd_front.o
+echo "\x1b[34m""\x1b[M" ft_lstadd_front.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstclear.c -o Bin/Objects/ft_lstclear.o
+echo "\x1b[34m""\x1b[M" ft_lstclear.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstdelone.c -o Bin/Objects/ft_lstdelone.o
+echo "\x1b[34m""\x1b[M" ft_lstdelone.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstiter.c -o Bin/Objects/ft_lstiter.o
+echo "\x1b[34m""\x1b[M" ft_lstiter.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstlast.c -o Bin/Objects/ft_lstlast.o
+echo "\x1b[34m""\x1b[M" ft_lstlast.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstmap.c -o Bin/Objects/ft_lstmap.o
+echo "\x1b[34m""\x1b[M" ft_lstmap.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstnew.c -o Bin/Objects/ft_lstnew.o
+echo "\x1b[34m""\x1b[M" ft_lstnew.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_lstsize.c -o Bin/Objects/ft_lstsize.o
+echo "\x1b[34m""\x1b[M" ft_lstsize.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_memchr.c -o Bin/Objects/ft_memchr.o
+echo "\x1b[34m""\x1b[M" ft_memchr.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_memcmp.c -o Bin/Objects/ft_memcmp.o
+echo "\x1b[34m""\x1b[M" ft_memcmp.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_memcpy.c -o Bin/Objects/ft_memcpy.o
+echo "\x1b[34m""\x1b[M" ft_memcpy.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_memlen.c -o Bin/Objects/ft_memlen.o
+echo "\x1b[34m""\x1b[M" ft_memlen.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_memmove.c -o Bin/Objects/ft_memmove.o
+echo "\x1b[34m""\x1b[M" ft_memmove.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_memset.c -o Bin/Objects/ft_memset.o
+echo "\x1b[34m""\x1b[M" ft_memset.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_nbrlen.c -o Bin/Objects/ft_nbrlen.o
+echo "\x1b[34m""\x1b[M" ft_nbrlen.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf.c -o Bin/Objects/ft_printf.o
+echo "\x1b[34m""\x1b[M" ft_printf.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_dispatch_flag_csp.c -o Bin/Objects/ft_printf_dispatch_flag_csp.o
+echo "\x1b[34m""\x1b[M" ft_printf_dispatch_flag_csp.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_dispatch_flag_duxo.c -o Bin/Objects/ft_printf_dispatch_flag_duxo.o
+echo "\x1b[34m""\x1b[M" ft_printf_dispatch_flag_duxo.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_flag.c -o Bin/Objects/ft_printf_flag.o
+echo "\x1b[34m""\x1b[M" ft_printf_flag.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_flag_app.c -o Bin/Objects/ft_printf_flag_app.o
+echo "\x1b[34m""\x1b[M" ft_printf_flag_app.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_put_c.c -o Bin/Objects/ft_printf_put_c.o
+echo "\x1b[34m""\x1b[M" ft_printf_put_c.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_put_du.c -o Bin/Objects/ft_printf_put_du.o
+echo "\x1b[34m""\x1b[M" ft_printf_put_du.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_put_p.c -o Bin/Objects/ft_printf_put_p.o
+echo "\x1b[34m""\x1b[M" ft_printf_put_p.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_put_s.c -o Bin/Objects/ft_printf_put_s.o
+echo "\x1b[34m""\x1b[M" ft_printf_put_s.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_printf_put_x.c -o Bin/Objects/ft_printf_put_x.o
+echo "\x1b[34m""\x1b[M" ft_printf_put_x.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_put_lst.c -o Bin/Objects/ft_put_lst.o
+echo "\x1b[34m""\x1b[M" ft_put_lst.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_putchar.c -o Bin/Objects/ft_putchar.o
+echo "\x1b[34m""\x1b[M" ft_putchar.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_putchar_fd.c -o Bin/Objects/ft_putchar_fd.o
+echo "\x1b[34m""\x1b[M" ft_putchar_fd.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_putendl_fd.c -o Bin/Objects/ft_putendl_fd.o
+echo "\x1b[34m""\x1b[M" ft_putendl_fd.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_puthex.c -o Bin/Objects/ft_puthex.o
+echo "\x1b[34m""\x1b[M" ft_puthex.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_putnbr.c -o Bin/Objects/ft_putnbr.o
+echo "\x1b[34m""\x1b[M" ft_putnbr.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_putnbr_fd.c -o Bin/Objects/ft_putnbr_fd.o
+echo "\x1b[34m""\x1b[M" ft_putnbr_fd.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_putstr.c -o Bin/Objects/ft_putstr.o
+echo "\x1b[34m""\x1b[M" ft_putstr.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_putstr_fd.c -o Bin/Objects/ft_putstr_fd.o
+echo "\x1b[34m""\x1b[M" ft_putstr_fd.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_realloc.c -o Bin/Objects/ft_realloc.o
+echo "\x1b[34m""\x1b[M" ft_realloc.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_rev_rotate_lst.c -o Bin/Objects/ft_rev_rotate_lst.o
+echo "\x1b[34m""\x1b[M" ft_rev_rotate_lst.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_rotate_lst.c -o Bin/Objects/ft_rotate_lst.o
+echo "\x1b[34m""\x1b[M" ft_rotate_lst.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_split.c -o Bin/Objects/ft_split.o
+echo "\x1b[34m""\x1b[M" ft_split.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_str_len.c -o Bin/Objects/ft_str_len.o
+echo "\x1b[34m""\x1b[M" ft_str_len.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strchr.c -o Bin/Objects/ft_strchr.o
+echo "\x1b[34m""\x1b[M" ft_strchr.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strdup.c -o Bin/Objects/ft_strdup.o
+echo "\x1b[34m""\x1b[M" ft_strdup.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_striteri.c -o Bin/Objects/ft_striteri.o
+echo "\x1b[34m""\x1b[M" ft_striteri.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strjoin.c -o Bin/Objects/ft_strjoin.o
+echo "\x1b[34m""\x1b[M" ft_strjoin.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strlcat.c -o Bin/Objects/ft_strlcat.o
+ 
+echo "\x1b[34m""\x1b[M" ft_strlcat.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strlcpy.c -o Bin/Objects/ft_strlcpy.o
+echo "\x1b[34m""\x1b[M" ft_strlcpy.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strlen.c -o Bin/Objects/ft_strlen.o
+echo "\x1b[34m""\x1b[M" ft_strlen.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strmapi.c -o Bin/Objects/ft_strmapi.o
+echo "\x1b[34m""\x1b[M" ft_strmapi.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strncmp.c -o Bin/Objects/ft_strncmp.o
+echo "\x1b[34m""\x1b[M" ft_strncmp.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strnstr.c -o Bin/Objects/ft_strnstr.o
+ 
+echo "\x1b[34m""\x1b[M" ft_strnstr.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strrchr.c -o Bin/Objects/ft_strrchr.o
+echo "\x1b[34m""\x1b[M" ft_strrchr.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_strtrim.c -o Bin/Objects/ft_strtrim.o
+echo "\x1b[34m""\x1b[M" ft_strtrim.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_substr.c -o Bin/Objects/ft_substr.o
+echo "\x1b[34m""\x1b[M" ft_substr.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_swap_lst.c -o Bin/Objects/ft_swap_lst.o
+echo "\x1b[34m""\x1b[M" ft_swap_lst.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_tolower.c -o Bin/Objects/ft_tolower.o
+echo "\x1b[34m""\x1b[M" ft_tolower.o is created !!
+ 
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/ft_toupper.c -o Bin/Objects/ft_toupper.o
+echo "\x1b[34m""\x1b[M" ft_toupper.o is created !!
+gcc -Wall -Wextra -Werror -I./Includes -c Sources/get_next_line.c -o Bin/Objects/get_next_line.o
+echo "\x1b[34m""\x1b[M" get_next_line.o is created !!
+ 
+ar rc Bin/libft.a Bin/Objects/ft_atoi.o Bin/Objects/ft_atol.o Bin/Objects/ft_bzero.o Bin/Objects/ft_calloc.o Bin/Objects/ft_check_extension.o Bin/Objects/ft_check_limit_int.o Bin/Objects/ft_exit_perror.o Bin/Objects/ft_exit_strerror.o Bin/Objects/ft_free_l_lst.o Bin/Objects/ft_free_pp.o Bin/Objects/ft_hexlen.o Bin/Objects/ft_isalnum.o Bin/Objects/ft_isalpha.o Bin/Objects/ft_isascii.o Bin/Objects/ft_isdigit.o Bin/Objects/ft_islower.o Bin/Objects/ft_isprint.o Bin/Objects/ft_isupper.o Bin/Objects/ft_itoa.o Bin/Objects/ft_lst_add.o Bin/Objects/ft_lst_check_double.o Bin/Objects/ft_lst_new.o Bin/Objects/ft_lstadd_back.o Bin/Objects/ft_lstadd_front.o Bin/Objects/ft_lstclear.o Bin/Objects/ft_lstdelone.o Bin/Objects/ft_lstiter.o Bin/Objects/ft_lstlast.o Bin/Objects/ft_lstmap.o Bin/Objects/ft_lstnew.o Bin/Objects/ft_lstsize.o Bin/Objects/ft_memchr.o Bin/Objects/ft_memcmp.o Bin/Objects/ft_memcpy.o Bin/Objects/ft_memlen.o Bin/Objects/ft_memmove.o Bin/Objects/ft_memset.o Bin/Objects/ft_nbrlen.o Bin/Objects/ft_printf.o Bin/Objects/ft_printf_dispatch_flag_csp.o Bin/Objects/ft_printf_dispatch_flag_duxo.o Bin/Objects/ft_printf_flag.o Bin/Objects/ft_printf_flag_app.o Bin/Objects/ft_printf_put_c.o Bin/Objects/ft_printf_put_du.o Bin/Objects/ft_printf_put_p.o Bin/Objects/ft_printf_put_s.o Bin/Objects/ft_printf_put_x.o Bin/Objects/ft_put_lst.o Bin/Objects/ft_putchar.o Bin/Objects/ft_putchar_fd.o Bin/Objects/ft_putendl_fd.o Bin/Objects/ft_puthex.o Bin/Objects/ft_putnbr.o Bin/Objects/ft_putnbr_fd.o Bin/Objects/ft_putstr.o Bin/Objects/ft_putstr_fd.o Bin/Objects/ft_realloc.o Bin/Objects/ft_rev_rotate_lst.o Bin/Objects/ft_rotate_lst.o Bin/Objects/ft_split.o Bin/Objects/ft_str_len.o Bin/Objects/ft_strchr.o Bin/Objects/ft_strdup.o Bin/Objects/ft_striteri.o Bin/Objects/ft_strjoin.o Bin/Objects/ft_strlcat.o Bin/Objects/ft_strlcpy.o Bin/Objects/ft_strlen.o Bin/Objects/ft_strmapi.o Bin/Objects/ft_strncmp.o Bin/Objects/ft_strnstr.o Bin/Objects/ft_strrchr.o Bin/Objects/ft_strtrim.o Bin/Objects/ft_substr.o Bin/Objects/ft_swap_lst.o Bin/Objects/ft_tolower.o Bin/Objects/ft_toupper.o Bin/Objects/get_next_line.o
+echo "\x1b[34m""\x1b[M" libft.a is created !!
+echo "\x1b[32m""\x1b[M" Compilation libft is completed !!
+ 
+make: Leaving directory `/Users/mat/Desktop/libft'
+ 
